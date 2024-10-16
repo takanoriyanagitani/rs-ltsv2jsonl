@@ -94,7 +94,7 @@ where
 {
     let br = BufReader::new(rdr);
     let lines = br.lines();
-    let noerr = lines.filter_map(|rslt| rslt.ok());
+    let noerr = lines.map_while(Result::ok);
     {
         let mut bw = BufWriter::new(wtr.by_ref());
         lines2writer(

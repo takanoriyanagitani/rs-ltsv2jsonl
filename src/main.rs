@@ -24,11 +24,11 @@ fn stdin2stdout(field_sep: char, value_sep: char, newline: u8) -> Result<(), io:
 fn sub() -> Result<(), io::Error> {
     let field_separator: char = env::var("ENV_LTSV_FIELD_SEPARATOR")
         .ok()
-        .and_then(|s| s.chars().nth(0))
+        .and_then(|s| s.chars().next())
         .unwrap_or(LTSV_FIELD_SEPARATOR_DEFAULT);
     let value_separator: char = env::var("ENV_LTSV_VALUE_SEPARATOR")
         .ok()
-        .and_then(|s| s.chars().nth(0))
+        .and_then(|s| s.chars().next())
         .unwrap_or(LTSV_VALUE_SEPARATOR_DEFAULT);
 
     let newline_char: u8 = env::var("ENV_JSONL_NEWLINE_CHAR_BYTE")
