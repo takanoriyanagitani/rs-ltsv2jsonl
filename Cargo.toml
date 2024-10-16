@@ -3,6 +3,11 @@ name = "rs-ltsv2jsonl"
 version = "0.1.0"
 edition = "2021"
 
+description = "stdin(LTSV) -> stdout(JSONL)"
+license = "Apache-2.0"
+documentation = "https://docs.rs/crate/rs-ltsv2jsonl/latest"
+repository = "https://github.com/takanoriyanagitani/rs-ltsv2jsonl"
+
 [lints.rust]
 unsafe_code = "forbid"
 
