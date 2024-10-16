@@ -1,0 +1,1 @@
+time:2024-10-17T08:07:32+09:00	method:GET	uri:/index.html	protocol:HTTP/1.1	status:200	size:1234	reqsize:200	reqtime:0.123	cache:MISS	runtime:10	apptime:0.080
